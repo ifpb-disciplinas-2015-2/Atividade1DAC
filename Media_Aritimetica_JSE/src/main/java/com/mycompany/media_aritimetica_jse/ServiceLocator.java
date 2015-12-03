@@ -16,7 +16,7 @@ public class ServiceLocator {
     protected <T> T lookup(String recurso, Class<T> tipo) {
         try {
             Properties props = new Properties();
-            props.put(Context.INITIAL_CONTEXT_FACTORY, "con.sun.enterprise.naming.SerialInitContextFactory");
+            props.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.enterprise.naming.SerialInitContextFactory");
             props.setProperty("org.omg.COBRA.ORBInitialHost", "localhost");
             props.setProperty("org.omg.COBRA.ORBInitialPort", "3700");
             InitialContext context = new InitialContext(props);

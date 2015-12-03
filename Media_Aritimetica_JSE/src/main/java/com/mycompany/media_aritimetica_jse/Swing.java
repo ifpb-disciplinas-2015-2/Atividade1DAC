@@ -170,7 +170,7 @@ public class Swing extends javax.swing.JFrame {
         String nome = "java:global/web/MediaAritmeticaImp";
         
         MediaAritmetica media = s.lookup(nome, MediaAritmetica.class);
-        jLabel5.setText(""+media);
+        jLabel5.setText(""+media.calculaMedia(nota1, nota2, nota3));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

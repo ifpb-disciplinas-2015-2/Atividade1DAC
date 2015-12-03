@@ -1,6 +1,7 @@
 package dijalmasilva.web.sessionBean;
 
 import com.mycompany.interfaces.MediaAritmetica;
+import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 /**
@@ -8,6 +9,7 @@ import javax.ejb.Stateless;
  * @author Dijalma Silva <dijalmacz@gmail.com>
  */
 @Stateless
+@Remote(MediaAritmetica.class)
 public class MediaAritmeticaImp implements MediaAritmetica{
 
     @Override
