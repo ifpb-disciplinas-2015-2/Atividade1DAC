@@ -167,7 +167,7 @@ public class Swing extends javax.swing.JFrame {
         float nota3 = Float.parseFloat(jTextField3.getText());
         MediaAritmetica calculaMedia = ServiceLocator.class; 
         
-        float media = calculaMedia((nota1 + nota2 + nota3) / 3);
+        float media = calculaMedia(nota1, nota2, nota3);
         jLabel5.setText(""+media);
     }//GEN-LAST:event_jButton1ActionPerformed
 
