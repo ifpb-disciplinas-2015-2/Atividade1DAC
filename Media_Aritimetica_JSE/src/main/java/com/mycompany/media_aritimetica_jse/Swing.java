@@ -170,7 +170,7 @@ public class Swing extends javax.swing.JFrame {
         float nota2 = Float.parseFloat(jTextField2.getText());
         float nota3 = Float.parseFloat(jTextField3.getText());
         ServiceLocator s = new ServiceLocator(); 
-        String nome = "java:global/web/MediaAritmeticaImp";
+        String nome = "java:global/core/MediaAritmeticaImp";
         
         MediaAritmetica media = s.lookup(nome, MediaAritmetica.class);
         jLabel5.setText(""+media.calculaMedia(nota1, nota2, nota3));

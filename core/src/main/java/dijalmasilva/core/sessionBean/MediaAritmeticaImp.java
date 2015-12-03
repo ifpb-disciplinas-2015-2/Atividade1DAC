@@ -1,4 +1,4 @@
-package dijalmasilva.web.sessionBean;
+package dijalmasilva.core.sessionBean;
 
 import com.mycompany.interfaces.MediaAritmetica;
 import javax.ejb.Remote;
