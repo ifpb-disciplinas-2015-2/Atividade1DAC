@@ -1,0 +1,1 @@
+java:global/web/MediaAritmeticaImp!com.mycompany.interfaces.MediaAritmetica
