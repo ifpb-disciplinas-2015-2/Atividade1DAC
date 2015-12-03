@@ -5,6 +5,7 @@
  */
 package com.mycompany.media_aritimetica_jse;
 
+import com.mycompany.interfaces.MediaAritmetica;
 import javax.swing.JOptionPane;
 
 /**
@@ -165,9 +166,10 @@ public class Swing extends javax.swing.JFrame {
         float nota1 = Float.parseFloat(jTextField1.getText());
         float nota2 = Float.parseFloat(jTextField2.getText());
         float nota3 = Float.parseFloat(jTextField3.getText());
-        MediaAritmetica calculaMedia = ServiceLocator.class; 
+        ServiceLocator s = new ServiceLocator(); 
+        String nome = "java:global/web/MediaAritmeticaImp";
         
-        float media = calculaMedia(nota1, nota2, nota3);
+        MediaAritmetica media = s.lookup(nome, MediaAritmetica.class);
         jLabel5.setText(""+media);
     }//GEN-LAST:event_jButton1ActionPerformed
 

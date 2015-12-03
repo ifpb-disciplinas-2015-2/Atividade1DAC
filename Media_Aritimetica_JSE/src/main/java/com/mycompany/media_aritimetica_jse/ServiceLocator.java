@@ -17,8 +17,8 @@ public class ServiceLocator {
         try {
             Properties props = new Properties();
             props.put(Context.INITIAL_CONTEXT_FACTORY, "con.sun.enterprise.naming.SerialInitContextFactory");
-            props.setProperty("org.omg.COBRA.ORBInitiaHost", "localhost");
-            props.setProperty("org.omg.COBRA.ORBInitiaPort", "3700");
+            props.setProperty("org.omg.COBRA.ORBInitialHost", "localhost");
+            props.setProperty("org.omg.COBRA.ORBInitialPort", "3700");
             InitialContext context = new InitialContext(props);
             return (T) context.lookup(recurso);
         } catch (NamingException ne) {
